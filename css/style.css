@@ -9,6 +9,12 @@ body {
   scroll-behavior: smooth;
   background-color: transparent;
 }
+/* .navbar ::before{
+  display: block;
+  content: '';
+  height: 0px;
+  box-shadow:5px 10px rgb(219, 22, 22) ;
+} */
 .container .navbar {
   display: flex;
   align-items: center;
@@ -21,6 +27,7 @@ body {
   /* margin: 1%; */
 
   /* box-shadow: 0 3px 18px #00000029; */
+ 
 }
 .container .navbar .logo {
   width: 13%;
@@ -32,6 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .container .navbar .menu ol {
   display: flex;
@@ -39,12 +47,18 @@ body {
   justify-content: center;
   gap: 50px;
   list-style: none;
+  
 }
 .container .navbar .menu ol a {
   text-decoration: none;
   color: #373657;
   font-weight: bold;
-}
+  scroll-behavior: smooth;
+ }
+ .container .navbar .menu ol a:hover{
+   transform: scale(1.02);
+   color: #2768cc;
+ }
 .container .navbar .text {
   margin: 0;
   padding: 0;
@@ -623,7 +637,7 @@ body {
   width: 22%;
   height: 45vh;
 
-  border: 1px solid;
+  border: 1px solid #cddaef;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -631,6 +645,7 @@ body {
   gap: 10px;
   flex-direction: column;
   border-radius: 20px;
+  
 }
 .testimonials .test .id1 {
   display: flex;
@@ -810,10 +825,7 @@ body {
 }
 
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+display: none;
   width: 30%;
 border-radius: 20px;
   gap: 20px;
